@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Nova Search",
+    "version": "1.0",
+    "description": "Adds Nova Search as a search engine option in Chromium based browsers",
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "chrome_settings_overrides": {
+        "search_provider": {
+            "name": "Nova Search",
+            "keyword": "novasearch",
+            "encoding": "UTF-8", 
+            "is_default": false,
+            "favicon_url": "https://novasearch.xyz/assets/manifest/favicon.ico",
+            "search_url": "https://novasearch.xyz/?q={searchTerms}",
+            "image_url": "https://novasearch.xyz/assets/manifest/icon128.png",
+            "search_url_post_params": "q={searchTerms}"
+        }
+    }
+}
